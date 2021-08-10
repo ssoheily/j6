@@ -43,7 +43,40 @@ console.log(addieren(2,4));
 
 let nums = [1,2,3,4,5,6,8]
 
-// 	nums.forEach( n => console.log(n))
-nums.forEach(function (n) {
-	console.log(n);
-})	
+	nums.forEach( n => console.log(n))
+
+	// replace 
+
+// nums.forEach(function (n) {
+// 	console.log(n);
+// 	})	
+
+let student = {
+	firstname: "sara",
+	lastname: "mueller",
+	age: 33,
+	fields: ["progemming","nursing"],
+	status: true,
+
+	// defintion methide
+	fullname(firstname, lastname){
+			return  `${this.lastname}  ${this.firstname}`
+		}
+		,
+		sayHello(){
+			console.log(`hello ${this.fullname()} `)
+		},
+		showField(){
+			this.fields.forEach((field,index) => {
+				console.log(`${index +1}. ${field}`)
+			});
+		}
+
+	}
+
+
+console.log(student.sayHello());	 	
+student.showField()
+
+
+
