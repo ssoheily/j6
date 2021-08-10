@@ -1,29 +1,46 @@
-// document.write("hi world");
-let isPrime = true;
+// document.write("hi world")
 
-let n = 11	;
 
-let i = 2;
 
-// while(i<n){
-// 	if(n % i == 0){
+function  isPrime(n) {
+	let isPrime = true;
 
-// 		isPrime = false
-// 		// console.log(i);
-// 		break;
-// 	}
-// 	i++;
-// }
 
-// prime number ????
-while(i< parseInt( n ** 0.5 ) + 1 ){
+	let i = 2;
+		while(i< parseInt( n ** 0.5 ) + 1 ){
 	if(n % i == 0){
 
 		isPrime = false
-		console.log(i);
+		// console.log(i);
 		break;
 
+		}
+		i++;
 	}
-	i++;
+	return isPrime;
 }
-console.log(n,isPrime);
+let a=10007
+let b=1000111
+let c=10004444
+console.log(isPrime(a));
+console.log(isPrime(b));
+console.log(isPrime(c));
+
+// arrow function
+const sayThings = () => {
+	console.log("halooo");
+}
+sayThings();
+
+
+// arrow function
+
+const addieren=(a,b) => a+b;
+console.log(addieren(2,4));
+
+
+// forEach mit arrow function
+
+let nums = [1,2,3,4,5,6,8]
+
+nums.forEach( n => console.log(n))
