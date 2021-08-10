@@ -43,4 +43,7 @@ console.log(addieren(2,4));
 
 let nums = [1,2,3,4,5,6,8]
 
-nums.forEach( n => console.log(n))
+// 	nums.forEach( n => console.log(n))
+nums.forEach(function (n) {
+	console.log(n);
+})	
